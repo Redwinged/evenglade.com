@@ -90,6 +90,10 @@ section + section { border-top: 1px solid var(--rule); }
 .auth-code { grid-area: code; font: 700 14cqw/1.1 var(--font-mono); white-space: nowrap; color: #2d5c38; }
 .auth-ring { grid-area: ring; width: 12cqw; height: 12cqw; color: #2d5c38; }
 .stop .text ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.stop .text ul.watch { list-style: none; padding: 0; margin-top: 4px; gap: 4px; font-size: 15px; }
+.watch a { display: inline-flex; align-items: center; gap: 8px; }
+.watch svg { width: 12px; height: 12px; fill: currentColor; flex: none; }
+.watch .len { color: var(--soft); font-size: 14px; white-space: nowrap; }
 /* Your look: every look in a row that pans, like the app's own picker. */
 .looks-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
 .pan { display: flex; gap: 10px; flex: none; }
