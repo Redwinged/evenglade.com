@@ -99,10 +99,10 @@ section + section { border-top: 1px solid var(--rule); }
 .pan svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .rail { margin-top: 36px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: thin; padding-bottom: 14px; border-radius: 4px; }
 .rail:focus-visible { outline: 2px solid var(--sage-ink); outline-offset: 4px; }
-.rail ul { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 280px; gap: 24px; }
+.rail ul { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 184px; gap: 20px; }
 .rail li { scroll-snap-align: start; }
 .rail figure { margin: 0; display: grid; gap: 12px; }
-.rail .phone { max-width: none; box-shadow: none; }
+.rail .phone { max-width: none; border-width: 4px; border-radius: 18px; box-shadow: none; }
 .rail figcaption { display: grid; gap: 2px; font-size: 15px; line-height: 1.4; }
 .rail figcaption span { color: var(--soft); font-size: 14px; }
 
@@ -230,13 +230,12 @@ tr:last-child td { border-bottom: 0; }
   .hero .phone { max-width: 240px; }
   .stop { grid-template-columns: 240px minmax(0, 1fr); gap: 44px; align-items: start; }
   .stop .phone, .stop .duo { max-width: 240px; }
-  .rail ul { grid-auto-columns: 240px; }
 }
 @media (max-width: 560px) {
   section { padding-block: 52px; }
   .keep ul { grid-template-columns: minmax(0, 1fr); }
   .pan { display: none; }
-  .rail ul { gap: 16px; }
+  .rail ul { grid-auto-columns: 150px; gap: 14px; }
   .stop { grid-template-columns: minmax(0, 1fr); }
   .stop .phone { justify-self: start; }
   .stop .duo { justify-self: start; }
